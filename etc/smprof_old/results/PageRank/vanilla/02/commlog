@@ -1,0 +1,28 @@
+spawn ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/PageRank/bin/run.sh'
+hduser@sdc-node11's password: 0 prompt
+
+========== running PageRank benchmark ==========
+Master:
+PageRank opt hdfs://10.1.0.111:9000/SparkBench/PageRank/Input hdfs://10.1.0.111:9000/SparkBench/PageRank/Output 2 5 0.001 0.15 MEMORY_AND_DISK
+rmr: DEPRECATED: Please use 'rm -r' instead.
+18/05/17 13:49:46 INFO fs.TrashPolicyDefault: Namenode trash configuration: Deletion interval = 0 minutes, Emptier interval = 0 minutes.
+Deleted hdfs://10.1.0.111:9000/SparkBench/PageRank/Output
+hduser@10.1.0.112's password: 1 prompt
+
+[sudo] password for hduser: 2 prompt
+
+Connection to 10.1.0.112 closed.
+data purged on 10.1.0.112
+hduser@10.1.0.111's password: 
+sh -c  /home/hduser/spark/bin/spark-submit --class src.main.scala.pagerankApp --executor-cores 8 --executor-memory 8g --master spark://10.1.0.111:7077   --conf spark.executor.memory=1g --conf spark.serializer=org.apache.spark.serializer.KryoSerializer --conf spark.rdd.compress=false --conf spark.io.compression.codec=lzf  /home/hduser/spark-bench-legacy/PageRank/target/PageRankApp-1.0.jar hdfs://10.1.0.111:9000/SparkBench/PageRank/Input hdfs://10.1.0.111:9000/SparkBench/PageRank/Output 2 5 0.001 0.15 MEMORY_AND_DISK 2>&1|tee /home/hduser/spark-bench-legacy/bin/..//num/PageRank_run_2018-05-17-13:49:51.dat
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/05/17 13:49:51 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/05/17 13:49:53 INFO FileInputFormat: Total input paths to process : 2
+[Stage 0:>                                                          (0 + 2) / 2]                                                                                18/05/17 13:49:56 INFO deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+18/05/17 13:49:56 INFO deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+18/05/17 13:49:56 INFO deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+18/05/17 13:49:56 INFO deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+18/05/17 13:49:56 INFO deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+18/05/17 13:49:56 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+Connection to sdc-node11 closed.
+[runtime] 16893

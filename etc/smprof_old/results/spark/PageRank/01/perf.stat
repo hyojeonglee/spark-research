@@ -1,0 +1,22 @@
+# started on Thu May 17 15:20:15 2018
+
+
+ Performance counter stats for 'system wide':
+
+     135755.597982      task-clock (msec)         #    7.999 CPUs utilized            (100.00%)
+            42,741      context-switches          #    0.315 K/sec                    (100.00%)
+             2,802      cpu-migrations            #    0.021 K/sec                    (100.00%)
+           202,015      page-faults               #    0.001 M/sec                  
+    52,721,202,132      cycles                    #    0.388 GHz                      (49.98%)
+   <not supported>      stalled-cycles-frontend  
+   <not supported>      stalled-cycles-backend   
+    54,355,738,263      instructions              #    1.03  insns per cycle          (62.49%)
+    10,571,119,009      branches                  #   77.869 M/sec                    (62.52%)
+       311,789,140      branch-misses             #    2.95% of all branches          (62.52%)
+    15,451,327,046      L1-dcache-loads           #  113.817 M/sec                    (38.03%)
+       950,487,908      L1-dcache-load-misses     #    6.15% of all L1-dcache hits    (30.16%)
+       350,156,668      LLC-loads                 #    2.579 M/sec                    (25.00%)
+        77,379,933      LLC-load-misses           #   22.10% of all LL-cache hits     (37.48%)
+
+      16.970592273 seconds time elapsed
+

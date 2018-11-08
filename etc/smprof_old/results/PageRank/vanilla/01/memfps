@@ -1,0 +1,346 @@
+vsz	rss	pid	cmd
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   676 14709 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   648 14707 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   700 14708 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12524  3052 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   652 14762 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   680 14760 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   680 14759 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12524  3052 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   680 14801 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   804 14799 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   756 14798 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12528  3056 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   656 14840 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   660 14838 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   644 14836 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12528  3056 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   804 14879 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   648 14877 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   660 14873 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12528  3056 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   656 14918 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   748 14917 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   676 14910 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12528  3056 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   656 14957 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   704 14956 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   668 14949 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12528  3056 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   808 14998 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   704 14997 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   680 14990 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12532  3060 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   672 15037 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   700 15035 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   756 15029 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12532  3060 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12532  3060 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   700 15157 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   648 15158 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   660 15156 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12532  3060 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   700 15197 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   656 15198 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   680 15195 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12532  3060 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   656 15264 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   676 15263 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   652 15260 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12532  3060 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   700 15344 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   680 15343 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   800 15340 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12536  3064 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   704 15389 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   804 15391 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   748 15385 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12536  3064 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12520  2952 14697 /bin/bash -c sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank | tee results/PageRank/vanilla/01/commlog
+ 52696  3808 14699 sudo perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 59844  4864 14705 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/PageRank/vanilla/01/perf.stat -- ../run-workload.sh PageRank
+ 12520  3008 14717 /bin/bash ../run-workload.sh PageRank
+ 42040  5176 14720 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/PageRank/bin/run.sh 3
+  7292   676 14700 tee results/PageRank/vanilla/01/commlog
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7432 14676 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  3080 14685 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/PageRank/vanilla/01/memfree; sleep 1; done
+  7284   676 15436 sleep 1
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+  7284   668 15440 sleep 1
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+  7284   660 15429 sleep 1
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12536  3064 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+     0     0 14697 [bash] <defunct>
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7640 14676 python /home/hduser/lazybox/run_exps.py stdin
+     0     0 14685 [bash] <defunct>
+ 12520  3044 14686 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/PageRank/vanilla/01/pswpin; sleep 1; done
+     0     0 15505 [sleep] <defunct>
+ 12520  2904 14689 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/PageRank/vanilla/01/pswpout; sleep 1; done
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+ 28288  1448 14702 vmstat 1
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12536  3064 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7640 14676 python /home/hduser/lazybox/run_exps.py stdin
+     0     0 14685 [bash] <defunct>
+     0     0 14686 [bash] <defunct>
+     0     0 14689 [bash] <defunct>
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+ 52696  3840 14696 sudo vmstat 1
+     0     0 14702 [vmstat] <defunct>
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12536  3064 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12528  3004 14673 /bin/bash ./do_profile.sh PageRank/vanilla ../run-workload.sh PageRank
+ 24908  7640 14676 python /home/hduser/lazybox/run_exps.py stdin
+     0     0 14685 [bash] <defunct>
+     0     0 14686 [bash] <defunct>
+     0     0 14689 [bash] <defunct>
+ 12520  3076 14692 /bin/bash -c sudo vmstat 1 >> results/PageRank/vanilla/01/vmstats
+     0     0 14696 [sudo] <defunct>
+ 12520  3012 14695 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh PageRank" >> results/PageRank/vanilla/01/memfps
+ 52696  3844 14698 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank
+ 12536  3064 14706 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh PageRank

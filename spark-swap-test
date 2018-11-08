@@ -1,0 +1,4 @@
+start ~/spark-research/mk_cgroup.sh 5000
+main ~/dapa/smprof/do_profile.sh SVDPlusPlus/Input_500M_mem5G "~/spark-research/run-workload-SVDPlusPlus.sh"
+back sleep 15 && ~/spark-research/add_pid.sh
+end ~/spark-research/del_cgroup.sh

@@ -1,0 +1,40 @@
+smprof: simple memory profiler
+==============================
+
+smprof is a simple memory characteristic profiler.
+
+
+Simle Tutorial
+==============
+
+Below is an simple tutorial for profiling of `stress`.
+
+```
+$ cd <smprof directory>
+#
+# open cfg.sh and edit as below:
+# WORKLOADS="stress"
+# VARIANTS="linux/4.16/swap_off
+# VARIANTS="linux/4.16/swap_on
+#
+$ ./do_profile.sh stress/linux/4.16/swap_on \
+	"stress -t 5 -m 2 --vm-bytes $((1024*1024*128)) --vm-keep"
+$ ./do_profile.sh stress/linux/4.16/swap_on \
+	"stress -t 5 -m 2 --vm-bytes $((1024*1024*128)) --vm-keep"
+$ sudo swapoff -a
+$ ./do_profile.sh stress/linux/4.16/swap_off \
+	"stress -t 5 -m 2 --vm-bytes $((1024*1024*128)) --vm-keep"
+$ ./do_profile.sh stress/linux/4.16/swap_off \
+	"stress -t 5 -m 2 --vm-bytes $((1024*1024*128)) --vm-keep"
+$
+$ ./post_profile_all.sh
+$ ./statall.sh
+$ ./mkreports.sh
+$ firefox ./reports/report.html
+```
+
+
+Author
+======
+
+SeongJae Park <sj38.park@gmail.com>

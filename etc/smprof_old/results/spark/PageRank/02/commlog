@@ -1,0 +1,4 @@
+spawn ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+hduser@sdc-node11's password: 0 prompt
+
+========== running SVDPlusPlus benchmark ==========

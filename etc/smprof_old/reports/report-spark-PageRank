@@ -1,0 +1,6 @@
+
+[Error] Number of lines are different for results/spark/PageRank/02/perf!
+
+llcmiss:	21.425
+memsued.avg:	35373.5
+page-faults:	0.0015

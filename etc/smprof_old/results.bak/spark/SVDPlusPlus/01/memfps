@@ -1,0 +1,687 @@
+vsz	rss	pid	cmd
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   644  4908 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   660  4907 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   756  4909 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12524  2908  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   700  4963 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   804  4962 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   812  4965 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12524  2908  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   700  5003 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   656  5002 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   748  5005 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12524  2908  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   700  5041 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   672  5040 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   648  5045 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12528  2912  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   812  5081 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   812  5079 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   748  5085 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12528  2912  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   680  5120 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   704  5121 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   676  5125 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12528  2912  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   656  5160 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   804  5161 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   644  5165 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12528  2912  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   704  5201 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   648  5203 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   672  5207 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12528  2912  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   800  5241 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12532  2916  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   672  5331 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   644  5332 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   748  5334 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12532  2916  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   752  5370 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   680  5373 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   676  5374 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12532  2916  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   664  5430 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   652  5436 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   748  5438 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12532  2916  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   668  5504 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   672  5511 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   756  5512 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12532  2916  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   668  5561 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   648  5568 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   704  5569 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12536  2920  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   652  5620 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12536  2920  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   700  5666 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   680  5670 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   644  5674 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12536  2920  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   660  5706 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   648  5710 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   804  5714 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12536  2920  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   664  5746 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   680  5750 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   700  5754 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12536  2920  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   648  5798 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   640  5802 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12536  2920  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   676  5838 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   800  5842 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   652  5846 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12540  2924  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   700  5881 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   648  5885 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   700  5889 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12540  2924  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   652  5929 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12540  2924  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   700  5972 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   648  5976 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   660  5980 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12540  2924  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12540  2924  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   664  6065 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   700  6069 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   668  6073 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12544  2928  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   652  6105 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   664  6113 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12544  2928  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   752  6157 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   660  6161 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   664  6165 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12544  2928  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   652  6197 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   800  6201 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   680  6205 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12544  2928  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   664  6237 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   644  6241 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   644  6245 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12544  2928  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   676  6289 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   648  6293 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12548  2932  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   812  6328 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   756  6332 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   656  6336 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12548  2932  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12520  3008  4900 /bin/bash -c sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus | tee results/spark/SVDPlusPlus/01/commlog
+ 52696  3844  4904 sudo perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 59844  4844  4913 /usr/lib/linux-tools/4.4.0-87-generic/perf stat -a -d -o results/spark/SVDPlusPlus/01/perf.stat -- ../run-workload.sh SVDPlusPlus
+ 12524  3004  4921 /bin/bash ../run-workload.sh SVDPlusPlus
+ 42040  5160  4922 expect remote_cmds.exp hduser sdc-node11 22 dcslab /home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh 3
+ 44916  5312  4923 ssh -t -p 22 hduser@sdc-node11 bash -c '/home/hduser/spark-bench-legacy/SVDPlusPlus/bin/run.sh'
+  7292   684  4905 tee results/spark/SVDPlusPlus/01/commlog
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7284  4879 python /home/hduser/lazybox/run_exps.py stdin
+ 12520  2900  4888 /bin/bash -c while :; do sudo cat /proc/meminfo | grep MemFree >> results/spark/SVDPlusPlus/01/memfree; sleep 1; done
+  7284   652  6370 sleep 1
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+  7284   668  6391 sleep 1
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   644  6395 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12548  2932  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7488  4879 python /home/hduser/lazybox/run_exps.py stdin
+     0     0  4888 [bash] <defunct>
+ 12520  3000  4889 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpin >> results/spark/SVDPlusPlus/01/pswpin; sleep 1; done
+     0     0  6443 [sleep] <defunct>
+ 12520  2896  4892 /bin/bash -c while :; do sudo cat /proc/vmstat | grep pswpout >> results/spark/SVDPlusPlus/01/pswpout; sleep 1; done
+  7284   668  6450 sleep 1
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+ 28288  1444  4910 vmstat 1
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12548  2932  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7488  4879 python /home/hduser/lazybox/run_exps.py stdin
+     0     0  4888 [bash] <defunct>
+     0     0  4889 [bash] <defunct>
+     0     0  4892 [bash] <defunct>
+ 12520  3056  4895 /bin/bash -c sudo vmstat 1 >> results/spark/SVDPlusPlus/01/vmstats
+ 52696  3864  4898 sudo vmstat 1
+     0     0  4910 [vmstat] <defunct>
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12548  2932  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12528  3000  4876 /bin/bash ./do_profile.sh spark/SVDPlusPlus ../run-workload.sh SVDPlusPlus
+ 24908  7488  4879 python /home/hduser/lazybox/run_exps.py stdin
+     0     0  4888 [bash] <defunct>
+     0     0  4889 [bash] <defunct>
+     0     0  4892 [bash] <defunct>
+     0     0  4895 [bash] <defunct>
+ 12520  3008  4899 /bin/bash -c sudo /home/hduser/lazybox/scripts/memfp.sh "../run-workload.sh SVDPlusPlus" >> results/spark/SVDPlusPlus/01/memfps
+ 52696  3908  4901 sudo /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus
+ 12548  2932  4911 /bin/bash /home/hduser/lazybox/scripts/memfp.sh ../run-workload.sh SVDPlusPlus

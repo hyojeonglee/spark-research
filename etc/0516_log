@@ -1,0 +1,52 @@
+[1] smprof (for metrics)
+
+do_profile
+============
+(res) commlog memfps memfree perf.stat pswpin pswpout vmstats
+
+- in this file, spark workload use "sudo" cmd
+- can't login with root when "sudo ssh ..."
+- so, I modify mklbxscr.sh, do_profile.sh, and lbx/exp.py
+
+post_profile
+============
+(res) ipc llcmiss memfps memfree memused memused.avg pf pswpin.avg pswpin.diff
+pswpout.avg pswpout.diff
+
+- OK
+
+extractperf
+============
+
+- TODO
+  - Add logic for spark workloads: params (cores, mem), input size, exec time
+    - executor-cores, executor-memory (TODO: more info about params)
+      - (ref) ~/spark-bench-legacy/conf/env.sh
+      - TODO: 위 인자를 실행 시 옵션으로 넘겨주도록 sparkbench script 수정
+    - TODO: Input data size 정보를 출력하도록 sparkbench script 수정
+    - TODO: 실행시간 정확성 확인
+
+stat
+============
+
+
+mkreport
+============
+
+
+
+[2] cgroup (for swap I/O overhead)
+(ref) ubench/swpio_perf.sh
+
+- TODO: Need a script !!!
+  0. Add dir to cgroup
+  1. Run workload
+  (below: background)
+  2. Get pid of java proc and add to file 'tasks' in dir
+  3. Control limit_in_bytes and measure swap I/O overhead
+
+
+
+[3] ETC
+
+- run-workload-all.sh: Add script for running all workloads.
